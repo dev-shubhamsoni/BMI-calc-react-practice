@@ -23,7 +23,7 @@ code {
   background-color: #a3b18a;
   border-radius: 30px;
   display: flex;
-  align-items: top;
-  justify-content: center;
+  justify-content: left;
+  align-items: center;
   flex-direction: column;
 }

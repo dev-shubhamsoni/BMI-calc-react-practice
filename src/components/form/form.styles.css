@@ -1,0 +1,16 @@
+.form-container{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.label{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#text-weight, #text-height{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}

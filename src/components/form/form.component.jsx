@@ -1,12 +1,25 @@
 import './form.styles.css'
 
-const Form = () => {
+const Form = ({setWeightValue ,setHeightValue, weight, height, submitDetails, onReload}) => {
+
     return (
         <div className='form-container'>
-            <form>
-                <label htmlFor='text'>Weight KG</label>
-                <input type='text' id='text' placeholder='text'></input>
+            <form className='form-container' onSubmit={submitDetails}>
+                <label className='label' htmlFor='text-weight' 
+                >Weight (kg)</label>
+
+                <input value={weight} type='number' id='text-weight'
+                onChange={setWeightValue}></input>
+
+                <label className='label' htmlFor='text-height'>Height (m)</label>
+
+                <input value={height} type='number' id='text-height' 
+                onChange={setHeightValue} ></input>
+
+                <button className='submit'>Submit</button>
             </form>
+
+            <button onClick={onReload} className='reload'>Reload</button>
         </div>
     )
 }
